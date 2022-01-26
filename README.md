@@ -26,9 +26,14 @@ let d = new Date();
 let hours = d.getHours();
 let currentTime = d.toLocaleDateString();
 let counter = SpreadsheetApp.getActiveSheet().getRange('B1').getValues();
+let currentDay = Utilities.formatDate(new Date(), "PST", "EEEE")
+let bannedDays = ['Saturday', 'Sunday']
 
-if (hours >= 8 && hours <= 16) {
-let response = UrlFetchApp.fetch('your heroku url here');
+if (hours >= 8 && hours <= 16 && !bannedDays.includes(currentDay)) {
+let response = UrlFetchApp.fetch('https://instagrand.herokuapp.com/');
+let response2 = UrlFetchApp.fetch('https://gundam-hunt.herokuapp.com/');
+let response3 = UrlFetchApp.fetch('https://awesome-anime.herokuapp.com/');
+let response4 = UrlFetchApp.fetch('http://coinffflip.herokuapp.com/')
 }
 
 SpreadsheetApp.getActiveSheet().getRange('A' + counter).setValue("Visted at " + currentTime + " " + hours + "h");
