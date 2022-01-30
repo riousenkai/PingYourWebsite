@@ -75,6 +75,7 @@ SpreadsheetApp.getActiveSheet().getRange('B1').setValue(Number(counter) + 1);
 <br>
 
 <h3 align="center">Notes</h3>
-<p>Last Updated: 1/24/2022</p>
+<p>Last Updated: 1/29/2022</p>
+<p>You can double your free dynos by saving your credit card information at Heroku. No need to purchase anything.</p>
 <p>I will add further explanations on how this works in the future.</p>
 <p>Having issues? Not working anymore? Send me a message on LinkedIn <a href="https://www.linkedin.com/in/john-elijah-revan-fajardo-33a189a3/" target="_blank">here</a>.</p>
