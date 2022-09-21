@@ -1,7 +1,6 @@
 <div align="center">
-<h1> RIP HEROKU </h1>
-<s><h2>Ping Your Heroku Website with Google Scripts!</h2>
-<p>Want to keep your free Heroku website alive during business hours?</p>
+<h2>Ping Your Website with Google Scripts!</h2>
+<p>Want to keep your free website alive during business hours?</p>
 <p>No problem! We can do that with Google Docs (Spreadsheets) and Google Scripts!<p>
 </div>
 <br>
@@ -31,7 +30,7 @@ let currentDay = Utilities.formatDate(new Date(), "PST", "EEEE")
 let bannedDays = ['Saturday', 'Sunday']
 
 if (hours >= 8 && hours <= 16 && !bannedDays.includes(currentDay)) {
-let response = UrlFetchApp.fetch('your heroku url here');
+let response = UrlFetchApp.fetch('your website url here');
 }
 
 SpreadsheetApp.getActiveSheet().getRange('A' + counter).setValue("Visted at " + currentTime + " " + hours + "h");
@@ -40,7 +39,7 @@ SpreadsheetApp.getActiveSheet().getRange('B1').setValue(Number(counter) + 1);
 </code>
 </pre>
 
-<p>All you need to do is to replace 'your heroku url here' with your actual heroku url (ex. 'https://test-app.herokuapp.com/').</p>
+<p>All you need to do is to replace 'your website url here' with your actual url (ex. 'https://test-app.herokuapp.com/').</p>
 <p>You can add more urls by adding another line inside the if statement (let response2 = UrlFetchApp.fetch('https://test-app2.herokuapp.com/''))
 <p>Hours are in PST. You can change the hours according the time you prefer the application to stay awake.</p>
 <img src="https://i.imgur.com/6yikA8n.png">
@@ -76,8 +75,5 @@ SpreadsheetApp.getActiveSheet().getRange('B1').setValue(Number(counter) + 1);
 <br>
 
 <h3 align="center">Notes</h3>
-<p>Last Updated: 1/29/2022</p>
-<p>You can double your free dynos by saving your credit card information at Heroku. No need to purchase anything.</p>
-<p>I will add further explanations on how this works in the future.</p>
+<p>Last Updated: 9/21/2022</p>
 <p>Having issues? Not working anymore? Send me a message on LinkedIn <a href="https://www.linkedin.com/in/john-elijah-revan-fajardo-33a189a3/" target="_blank">here</a>.</p>
-</s>
