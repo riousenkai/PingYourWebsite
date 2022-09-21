@@ -1,5 +1,6 @@
 <div align="center">
-<h2>Ping Your Heroku Website with Google Scripts!</h2>
+<h1> RIP HEROKU </h1>
+<s><h2>Ping Your Heroku Website with Google Scripts!</h2>
 <p>Want to keep your free Heroku website alive during business hours?</p>
 <p>No problem! We can do that with Google Docs (Spreadsheets) and Google Scripts!<p>
 </div>
@@ -79,3 +80,4 @@ SpreadsheetApp.getActiveSheet().getRange('B1').setValue(Number(counter) + 1);
 <p>You can double your free dynos by saving your credit card information at Heroku. No need to purchase anything.</p>
 <p>I will add further explanations on how this works in the future.</p>
 <p>Having issues? Not working anymore? Send me a message on LinkedIn <a href="https://www.linkedin.com/in/john-elijah-revan-fajardo-33a189a3/" target="_blank">here</a>.</p>
+</s>
