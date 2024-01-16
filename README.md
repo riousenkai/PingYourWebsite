@@ -76,4 +76,4 @@ SpreadsheetApp.getActiveSheet().getRange('B1').setValue(Number(counter) + 1);
 
 <h3 align="center">Notes</h3>
 <p>Last Updated: 9/21/2022</p>
-<p>Having issues? Not working anymore? Send me a message on LinkedIn <a href="https://www.linkedin.com/in/john-elijah-revan-fajardo-33a189a3/" target="_blank">here</a>.</p>
+<p>Having issues? Not working anymore? Send me a message on LinkedIn <a href="https://www.linkedin.com/in/revanf" target="_blank">here</a>.</p>
